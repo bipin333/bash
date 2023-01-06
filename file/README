@@ -1,0 +1,5 @@
+download multiple file from internet
+
+
+Command:-
+./file <site url> <file extension>
