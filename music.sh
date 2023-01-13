@@ -1,0 +1,1 @@
+clear;k=0;while true ;do ;tput cup 10 0;for j in {1..$(tput colns)};do echo -n '*';done;n=$(($RANDOM % 10));if (($RANDOM % 3 > 0));then for i in {-$n..$n};do tput cup $((10+$i)) $k;echo '*';done;fi;((k=$k+1));if (($k==$(tput colns)));then k=0;clear;fi;done
