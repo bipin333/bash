@@ -12,3 +12,4 @@ funny_lion
 
 hog
 penguin
+smoking_cigratte

@@ -1,0 +1,1 @@
+n=3;c=3;clear;while true;do tput cup $n $c; echo '-|-';tput cup $(($n-1)) $(($c+1));echo '0';tput cup $(($n+1)) $c;(($c % 2 ==0))&&echo '/ |'||echo '/ /';((c=$c+3));sleep 1;clear;(($c > $(tput colns)))&&tput cup 20 20&&echo fuck you&&break;done
