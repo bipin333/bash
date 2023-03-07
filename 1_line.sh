@@ -1,1 +1,1 @@
-curl -Ls 'https://m.youtube.com/results?sp=mAEA&search_query=naruto+edits' | grep -o 'https://[^":]*\.jpg' |uniq | xargs -I {} bash -c 'echo $(($(cat count.txt)+1)) >count.txt;echo "$(cat count.txt)={}" >>data.txt;curl {} -o $(cat count.txt).jpg'
+echo 0 >count.txt;curl -Ls 'https://m.youtube.com/results?sp=mAEA&search_query=naruto+edits' | grep -o 'https://[^":]*\.jpg' |uniq | xargs -I {} bash -c 'echo $(($(cat count.txt)+1)) >count.txt;echo "$(cat count.txt)={}" >>data.txt;curl {} -o $(cat count.txt).jpg'
